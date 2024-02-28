@@ -1,0 +1,12 @@
+appId: org.reactjs.native.example.qazandoqafood
+env:
+    USERNAME: teste@teste.com
+    PASSWORD: 123456
+---
+- launchApp
+- runFlow:
+    file: login.yaml
+    env:
+        USERNAME: vitor@vitor.com
+        PASSWORD: 123456
+- assertVisible: "Erro ao realizar login"
