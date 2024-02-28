@@ -1,0 +1,27 @@
+appId: org.reactjs.native.example.qazandoqafood
+tags:
+  - principal-flow
+---
+- runFlow: ../login/loginSuccess.yaml
+- tapOn:
+    id: "address-button"
+- tapOn: "Permitir"
+- tapOn:
+    id: "store-list-item"
+    index: 0
+- tapOn:
+    id: "add-item-buttom"
+    index: 0
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "confirm-order-button"
+- scrollUntilVisible:
+    element:
+      text: "Dinheiro"
+- tapOn: "Dinheiro"
+- tapOn:
+    id: "do-order-button"
+- assertVisible: "Acompanhar pedido"
+- assertVisible:
+    id: "order-sucess-txt"
