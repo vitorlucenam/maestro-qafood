@@ -1,0 +1,17 @@
+appId: org.reactjs.native.example.qazandoqafood
+env:
+    USERNAME: teste@teste.com
+    PASSWORD: 123456
+---
+- launchApp
+- tapOn:
+    id: "email"
+- assertVisible: "E-mail"
+- inputText: ${USERNAME}
+- tapOn:
+    id: "password"
+- inputText: ${PASSWORD}
+- tapOn:
+    id: Return   
+- tapOn: "login-button"
+- assertVisible: "Lojas"
