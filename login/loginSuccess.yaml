@@ -1,4 +1,6 @@
 appId: org.reactjs.native.example.qazandoqafood
+tags:
+  - principal-flow
 env:
     USERNAME: teste@teste.com
     PASSWORD: 123456
