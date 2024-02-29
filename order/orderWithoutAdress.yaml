@@ -1,0 +1,9 @@
+appId: org.reactjs.native.example.qazandoqafood
+tags:
+  - principal-flow
+---
+- runFlow: ../login/loginSuccess.yaml
+- tapOn:
+    id: "store-list-item"
+    index: 0
+- assertVisible: "Ops... Selecione o endereço para continuar"
