@@ -1,0 +1,28 @@
+appId: org.reactjs.native.example.qazandoqafood
+tags:
+  - principal-flow
+---
+- runFlow: ../login/loginSuccess.yaml
+- tapOn:
+    id: "address-button"
+- tapOn: "Permitir"
+- tapOn:
+    id: "store-list-item"
+    index: 0
+- tapOn:
+    id: "add-item-buttom"
+    index: 1
+- tapOn:
+    id: "add-item-buttom"
+    index: 2
+- tapOn:
+    id: "add-item-buttom"
+    index: 3
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "back"
+    index: 1
+- tapOn: "Limpar"
+- tapOn: "Você não possui produtos no carrinho!"
+
